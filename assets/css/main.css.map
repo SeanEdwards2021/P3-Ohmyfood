@@ -1,9 +1,13 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,0BAA0B;AAC1B,AAAA,IAAI,CAAC;EACD,eAAe,EAAE,MAAM;CAC1B;;AAED,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;EACjC,MAAM,EAAE,MAAM;CACjB;;AERD,oBAAoB;AACpB,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,OAAO,EAAE,IAAI;CACd",
     "sources": [
         "../sass/main.scss",
-        "../sass/_home.scss"
+        "../sass/_base.scss",
+        "../sass/_variables.scss",
+        "../sass/_header.scss",
+        "../sass/_home.scss",
+        "../sass/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
