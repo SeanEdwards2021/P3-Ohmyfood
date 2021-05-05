@@ -8,6 +8,9 @@ body {
   margin: 0 auto;
 }
 
+/* Breakpoints */
+/* Map */
+/* Mixin */
 /* Header Section */
 .logo {
   display: -webkit-box;
@@ -19,8 +22,8 @@ body {
   padding: 20px 0 10px 0;
 }
 
-/*Home Page */
-/* Header Section */
+/* ---------- Home Page ---------- */
+/* Location Section */
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,6 +49,7 @@ body {
   font-weight: bold;
 }
 
+/* Explore Section */
 .explore {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,6 +90,105 @@ body {
   text-decoration: none;
   color: #ffffff;
   margin-left: 30px;
+}
+
+/* How It Works Section */
+.list-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 20px 0 0 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 665px) {
+  .list-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.instruction-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 665px) {
+  .instruction-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+
+.instruction-list_icon {
+  padding: 0 10px 0 0;
+  color: grey;
+}
+
+.instruction-list li {
+  counter-increment: step-counter;
+  margin-bottom: 20px;
+  background-color: #F4F4F4;
+  width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-box-shadow: 3px 3px 14px 0px #a7a7a7;
+          box-shadow: 3px 3px 14px 0px #a7a7a7;
+}
+
+@media screen and (min-width: 665px) {
+  .instruction-list li {
+    margin: 0 15px;
+    width: 80%;
+    max-width: 255px;
+  }
+}
+
+.instruction-list li::before {
+  content: counter(step-counter);
+  margin-right: 20px;
+  margin-left: -30px;
+  font-size: 80%;
+  background-color: #9356DC;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+.instruction-list li:hover {
+  color: #4D4D4D;
+  -webkit-box-shadow: 3px 3px 14px 0px #5b5b5b;
+          box-shadow: 3px 3px 14px 0px #5b5b5b;
 }
 
 /* Footer Section */
