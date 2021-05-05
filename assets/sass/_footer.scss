@@ -1,3 +1,5 @@
+/* Footer Section */
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -8,14 +10,13 @@
   &_logo {
     font-family: "Shrikhand",cursive;
     color: #f4f4f4;
-    font-size: 130%;
-    padding-bottom: 20px;
+    font-size: 140%;
+    padding-bottom: 15px;
   }
 
   &_link {
     text-decoration: none;
     padding-top: 10px;
-    font-weight: 500;
     color: $white;
   }
 
