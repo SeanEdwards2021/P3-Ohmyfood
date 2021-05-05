@@ -16,9 +16,79 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px 0 10px 0;
+}
+
+/*Home Page */
+/* Header Section */
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5c5c5), color-stop(15%, #e6e6e6));
+  background: linear-gradient(180deg, #c5c5c5 0%, #e6e6e6 15%);
   padding: 15px;
 }
 
+.location_icon {
+  padding-right: 20px;
+}
+
+.location_text {
+  color: #4D4D4D;
+  font-weight: bold;
+}
+
+.explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0 25px 0;
+  background-color: #f3f3f3;
+}
+
+.explore_title {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.explore_sub-title {
+  margin: 25px;
+  text-align: center;
+  color: grey;
+}
+
+.explore_button {
+  border-radius: 30px;
+  background: #FF79DA;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 98%);
+  padding: 10px;
+  width: 220px;
+  -webkit-box-shadow: 3px 3px 14px 0px #a7a7a7;
+          box-shadow: 3px 3px 14px 0px #a7a7a7;
+}
+
+.explore_button_a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
+/* Footer Section */
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,14 +107,13 @@ body {
 .footer-container_logo {
   font-family: "Shrikhand",cursive;
   color: #f4f4f4;
-  font-size: 130%;
-  padding-bottom: 20px;
+  font-size: 140%;
+  padding-bottom: 15px;
 }
 
 .footer-container_link {
   text-decoration: none;
   padding-top: 10px;
-  font-weight: 500;
   color: #ffffff;
 }
 
