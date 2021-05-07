@@ -191,6 +191,105 @@ body {
           box-shadow: 3px 3px 14px 0px #5b5b5b;
 }
 
+/* Restaurants Section */
+.restaurants {
+  margin: 0px;
+  padding: 40px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F4F4F4;
+}
+
+@media screen and (min-width: 665px) {
+  .restaurants {
+    padding: 40px 10%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.restaurants_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 10px 0;
+}
+
+.restaurants_btn {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  text-decoration: none;
+  color: initial;
+  -webkit-box-shadow: 3px 3px 14px 0px #a7a7a7;
+          box-shadow: 3px 3px 14px 0px #a7a7a7;
+}
+
+@media screen and (min-width: 665px) {
+  .restaurants_btn {
+    width: 45%;
+    max-width: 480px;
+  }
+}
+
+.restaurants_btn img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: -10px;
+}
+
+.restaurants_btn .new {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 5px 20px;
+  border-radius: 3px;
+  top: 12px;
+  right: 12px;
+}
+
+.restaurants_btn .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurants_btn .caption_text {
+  margin-left: 10px;
+}
+
+.restaurants_btn .caption_text > p:first-child {
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
 /* Footer Section */
 .footer-container {
   display: -webkit-box;

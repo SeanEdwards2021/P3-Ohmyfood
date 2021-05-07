@@ -124,3 +124,78 @@
     }
   }
 }
+
+/* Restaurants Section */
+
+.restaurants {
+  margin: 0px;
+  padding: 40px 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $color-background;
+
+  @include tablets {
+    padding: 40px 10%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+}
+
+.restaurants_btn {
+  background-color: $white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  text-decoration: none;
+  color: initial;
+  @include shadow;
+  
+  @include tablets {
+    width: 45%;
+    max-width: 480px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -10px;
+  }
+
+  & .new {
+    position: absolute;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 40%);
+    padding: 5px 20px;
+    border-radius: 3px;
+    top: 12px;
+    right: 12px;
+  }
+
+  & .caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &_text {
+      margin-left: 10px;
+
+      > p:first-child {
+        font-weight: bold;
+        margin-bottom: -10px;
+      }
+    }
+  }
+}
