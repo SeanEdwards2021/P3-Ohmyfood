@@ -123,6 +123,14 @@ body {
   padding: 20px 0 10px 0;
 }
 
+.logo_icon {
+  position: absolute;
+  font-size: 150%;
+  top: 22px;
+  left: 20px;
+  color: initial;
+}
+
 /* ---------- Home Page ---------- */
 /* Location Section */
 .location {
