@@ -32,14 +32,14 @@
     padding-left: 5%;
   }
 
- //&_icon {
-    // @include heart-icon(5px);
+  &_icon {
+    @include heart-icon(5px);
 
-    //&--full {
-      //@include heart-icon(5px);
-      // @include heart-hover;
-    //}
-  //}
+    &-full {
+        @include heart-icon(5px);
+        @include heart-hover;
+    }
+  }
 }
 
 .heart-container {
