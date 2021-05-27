@@ -11,6 +11,107 @@ body {
 /* Breakpoints */
 /* Map */
 /* Mixin */
+@-webkit-keyframes pulse {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    opacity: .4;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    opacity: .4;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-animation: loader 2s;
+          animation: loader 2s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader_container {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dots {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.dots-primary {
+  background-color: #9356DC;
+  -webkit-animation: pulse .4s ease 0s infinite alternate;
+          animation: pulse .4s ease 0s infinite alternate;
+}
+
+.dots-secondary {
+  background-color: #FF79DA;
+  -webkit-animation: pulse .4s ease .2s infinite alternate;
+          animation: pulse .4s ease .2s infinite alternate;
+}
+
+.dots-tertiary {
+  background-color: #99E2D0;
+  -webkit-animation: pulse .4s ease .4s infinite alternate;
+          animation: pulse .4s ease .4s infinite alternate;
+}
+
 /* Header Section */
 .logo {
   display: -webkit-box;
