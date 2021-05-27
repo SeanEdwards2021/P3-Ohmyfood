@@ -96,20 +96,20 @@ body {
 
 .dots-primary {
   background-color: #9356DC;
-  -webkit-animation: pulse .4s ease 0s infinite alternate;
-          animation: pulse .4s ease 0s infinite alternate;
+  -webkit-animation: pulse .6s ease 0s infinite alternate;
+          animation: pulse .6s ease 0s infinite alternate;
 }
 
 .dots-secondary {
   background-color: #FF79DA;
-  -webkit-animation: pulse .4s ease .2s infinite alternate;
-          animation: pulse .4s ease .2s infinite alternate;
+  -webkit-animation: pulse .6s ease .2s infinite alternate;
+          animation: pulse .6s ease .2s infinite alternate;
 }
 
 .dots-tertiary {
   background-color: #99E2D0;
-  -webkit-animation: pulse .4s ease .4s infinite alternate;
-          animation: pulse .4s ease .4s infinite alternate;
+  -webkit-animation: pulse .6s ease .4s infinite alternate;
+          animation: pulse .6s ease .4s infinite alternate;
 }
 
 /* Header Section */
@@ -323,10 +323,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px 0 10px 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 665px) {
+  .restaurants_header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .restaurants_btn {

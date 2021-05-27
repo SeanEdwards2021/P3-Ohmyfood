@@ -144,8 +144,15 @@
 
   &_header {
     display: flex;
-    justify-content: center;
-    padding: 20px 0 10px 0;
+    flex-basis: 100%;
+    justify-content: left;
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    
+    @include tablets {
+      justify-content: center;
+    }
   }
 }
 
