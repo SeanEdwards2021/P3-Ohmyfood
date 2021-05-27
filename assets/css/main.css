@@ -112,6 +112,109 @@ body {
           animation: pulse .6s ease .4s infinite alternate;
 }
 
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  85% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  85% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+.submenu.delay-1 .menu-item, .submenu.delay-2 .menu-item, .submenu.delay-3 .menu-item {
+  -webkit-animation: FadeIn 600ms linear;
+          animation: FadeIn 600ms linear;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.submenu.delay-1 .menu-item:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.submenu.delay-1 .menu-item:nth-child(3) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.submenu.delay-1 .menu-item:nth-child(4) {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.submenu.delay-1 .menu-item:nth-child(5) {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.submenu.delay-2 .menu-item:nth-child(2) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.submenu.delay-2 .menu-item:nth-child(3) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.submenu.delay-2 .menu-item:nth-child(4) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.submenu.delay-3 .menu-item:nth-child(2) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.submenu.delay-3 .menu-item:nth-child(3) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.submenu.delay-3 .menu-item:nth-child(4) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
 /* Header Section */
 .logo {
   display: -webkit-box;
