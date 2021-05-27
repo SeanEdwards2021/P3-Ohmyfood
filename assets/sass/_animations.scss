@@ -48,17 +48,17 @@
 
   &-primary {
     background-color: $color-primary;
-    animation: pulse .4s ease 0s infinite alternate;
+    animation: pulse .6s ease 0s infinite alternate;
   }
 
   &-secondary {
     background-color: $color-secondary;
-    animation: pulse .4s ease .2s infinite alternate;
+    animation: pulse .6s ease .2s infinite alternate;
   }
   
   &-tertiary {
     background-color: $color-tertiary;
-    animation: pulse .4s ease .4s infinite alternate;
+    animation: pulse .6s ease .4s infinite alternate;
 
   }
 }
