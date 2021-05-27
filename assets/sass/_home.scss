@@ -208,7 +208,7 @@
     &_icon {
       @include heart-icon;
 
-      &--full {
+      &-full {
         @include heart-icon;
         @include heart-hover;
       }

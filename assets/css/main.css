@@ -521,7 +521,7 @@ body {
   margin: 25px 25px 0 0;
 }
 
-.restaurants_btn .caption_icon--full {
+.restaurants_btn .caption_icon-full {
   font-size: 150%;
   cursor: pointer;
   position: absolute;
@@ -535,7 +535,7 @@ body {
   transition: transform 300ms, -webkit-transform 300ms;
 }
 
-.restaurants_btn .caption_icon--full:hover {
+.restaurants_btn .caption_icon-full:hover {
   -webkit-transform: scale(0.86);
           transform: scale(0.86);
   background: -webkit-linear-gradient(198deg, #9356DC 10%, #FF79DA 49%);
@@ -586,6 +586,36 @@ body {
   font-family: 'Shrikhand', cursive;
   font-size: 25px;
   padding-left: 5%;
+}
+
+.header-container_icon {
+  font-size: 150%;
+  cursor: pointer;
+  position: absolute;
+  margin: 5px;
+}
+
+.header-container_icon-full {
+  font-size: 150%;
+  cursor: pointer;
+  position: absolute;
+  margin: 5px;
+  color: transparent;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.header-container_icon-full:hover {
+  -webkit-transform: scale(0.86);
+          transform: scale(0.86);
+  background: -webkit-linear-gradient(198deg, #9356DC 10%, #FF79DA 49%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heart-container {
