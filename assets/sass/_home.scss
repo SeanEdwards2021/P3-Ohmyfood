@@ -204,5 +204,14 @@
         margin-bottom: -10px;
       }
     }
+
+    &_icon {
+      @include heart-icon;
+
+      &--full {
+        @include heart-icon;
+        @include heart-hover;
+      }
+    }
   }
 }

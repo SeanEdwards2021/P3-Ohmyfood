@@ -514,6 +514,36 @@ body {
   margin-bottom: -10px;
 }
 
+.restaurants_btn .caption_icon {
+  font-size: 150%;
+  cursor: pointer;
+  position: absolute;
+  margin: 25px 25px 0 0;
+}
+
+.restaurants_btn .caption_icon--full {
+  font-size: 150%;
+  cursor: pointer;
+  position: absolute;
+  margin: 25px 25px 0 0;
+  color: transparent;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.restaurants_btn .caption_icon--full:hover {
+  -webkit-transform: scale(0.86);
+          transform: scale(0.86);
+  background: -webkit-linear-gradient(198deg, #9356DC 10%, #FF79DA 49%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*--- Restaurant Pages ---*/
 .background-img {
   width: 100%;
